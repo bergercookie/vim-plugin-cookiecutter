@@ -1,0 +1,7 @@
+{
+    "author": "Nikos Koukis",
+    "plugin_name": "vim-plugin",
+    "repo_url_base": "https://github.com/bergercookie",
+    "plugin_short_description": "Some short description for your plugin",
+    "version": "0.1.0"
+}
