@@ -1,0 +1,11 @@
+language: python
+
+dist: bionic
+sudo: required
+cache:
+- pip
+install:
+- sudo apt-get update && sudo apt-get install cookiecutter
+
+script:
+- cookiecutter cookiecutter.json -o some-plugin-name -v --no-input

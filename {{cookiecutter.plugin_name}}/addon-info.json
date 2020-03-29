@@ -1,0 +1,9 @@
+{
+  "name" : "{{cookiecutter.plugin_name}}",
+  "version" : "{{cookiecutter.version}}",
+  "author_name" : "{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>",
+  "maintainer" : "{{cookiecutter.author_name}} <{{cookiecutter.author_email}}>",
+  "repository" : {"type": "git", "url": "ssh://git@{{cookiecutter.repo_url_base}}/{{cookiecutter.plugin_name}}"},
+  "dependencies" : {},
+  "description" : "{{cookiecutter.plugin_short_description}}"
+}

@@ -1,0 +1,12 @@
+language: python
+
+dist: bionic
+sudo: required
+cache:
+- pip
+before_install:
+- sudo apt-get update && sudo apt-get install -f
+- pip3 install vim-vint
+
+script:
+
