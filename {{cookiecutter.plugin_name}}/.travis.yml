@@ -5,8 +5,16 @@ sudo: required
 cache:
 - pip
 before_install:
-- sudo apt-get update && sudo apt-get install -f
+{%- if cookiecutter.check_style_with == 'vint' %}
 - pip3 install vim-vint
+{%- endif %}
+{%- if cookiecutter.unittest_with == 'vader' %}
+- git clone https://github.com/junegunn/vader.vim
+{%- endif %}
 
 script:
+{%- if cookiecutter.check_style_with_vint == 'vint' %}
+- vint --color --style-problems --verbose --stat $(find -type f -iname "*.vim")
+{%- endif %}
+- ./test/run-tests.sh
 
