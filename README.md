@@ -1,5 +1,7 @@
 # vim-plugin-cookiecutter
 
+[![Build Status](https://travis-ci.com/bergercookie/vim-plugin-cookiecutter.svg?branch=master)](https://travis-ci.com/bergercookie/vim-plugin-cookiecutter)
+
 ## Description
 
 The purpose of this package is to facilitate in the creation of the skeleton of
@@ -10,6 +12,5 @@ a vim plugin. This can hopefully:
 
 ## TODO
 
-- [ ] Add to the instructions for each one of the package manager
 - [ ] Add vim-pack as package manager
-- [ ] Add suite tests with Vader
+- [X] Add suite tests with Vader

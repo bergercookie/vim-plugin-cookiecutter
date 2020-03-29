@@ -1,5 +1,7 @@
-# {{ cookiecutter.plugin_name }}
+# {{cookiecutter.plugin_name}}
 
+| [![Build Status](https://travis-ci.com/bergercookie/{{cookiecutter.plugin_name}}.svg?branch=master)](https://travis-ci.com/bergercookie/{{cookiecutter.plugin_name}}) | {%- if cookiecutter.check_style_with == 'vint' %} [![](https://badgen.net/badge/Linted%20with/vint/purple?icon=github)](https://github.com/Vimjas/vint) {%- endif %} | {%- if cookiecutter.unittest_with == 'vader' %} [![](https://badgen.net/badge/Tested%20with/vader/orange?icon=github)](https://github.com/junegunn/vader.vim) {%- endif %} |
+| :---- | :---- | :---- |
 ```
 TODO Asciiart - goes here
 ```
@@ -37,6 +39,7 @@ TODO
 
 ## TODO
 
+* [ ] Check the build status badge
 * [ ] Add unittests via travis + vader
 * [ ] Add asciiart symbol
 * [ ] Add demo

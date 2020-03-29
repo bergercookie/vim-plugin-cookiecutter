@@ -13,8 +13,7 @@ before_install:
 {%- endif %}
 
 script:
-{%- if cookiecutter.check_style_with_vint == 'vint' %}
+{%- if cookiecutter.check_style_with == 'vint' %}
 - vint --color --style-problems --verbose --stat $(find -type f -iname "*.vim")
 {%- endif %}
 - ./test/run-tests.sh
-

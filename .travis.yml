@@ -8,4 +8,6 @@ install:
 - sudo apt-get update && sudo apt-get install cookiecutter
 
 script:
-- cookiecutter cookiecutter.json -o some-plugin-name -v --no-input
+- cookiecutter . -v --no-input
+  && git clone https://github.com/junegunn/vader.vim vim-plugin/vader.vim
+  && ./vim-plugin/test/run-tests.sh

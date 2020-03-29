@@ -1,0 +1,12 @@
+filetype off
+let g:mapleader = ","
+
+filetype plugin indent on
+syntax enable
+set nomore
+set noswapfile
+set viminfo=
+
+set runtimepath+=.
+set runtimepath+=vader.vim
+set runtimepath+=after

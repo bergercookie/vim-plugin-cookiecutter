@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
-# file taken directly from https://github.com/junegunn/vader.vim
-
 set -e
 
-# Do not "cd" to any existing "test" dir from CDPATH!
-unset CDPATH
-
-
-# TODO - Fixme for neovim
 {%- if cookiecutter.unittest_with == 'vader' %}
+# TODO - Add tests for neovim?
+(
 cd "$(dirname "$(dirname "${BASH_SOURCE[0]}")")"
+if ! test -d vader.vim
+then
+    echo "[E] Vader is not cloned locally - fix this!"
+    exit 1
+fi
 command vim -Nu test/vimrc -c 'Vader! test/*'
-cd -
+)
 {%- endif %}
 
 exit 0

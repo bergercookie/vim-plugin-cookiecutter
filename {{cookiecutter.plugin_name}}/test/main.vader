@@ -1,0 +1,27 @@
+" See this for reference: https://github.com/junegunn/vader.vim
+" Include: some-other-file.vader
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+""
+" TODO Test description...
+After ():
+    echom "TODO"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+""
+" TODO Test description...
+After ():
+    echom "TODO"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+" Test cases
+Execute (TODO TestCase1):
+    echom "A TestCase..."
+
+Execute (TODO TestCase2):
+    echom "A TestCase..."
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
